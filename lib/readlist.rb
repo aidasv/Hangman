@@ -2,7 +2,7 @@ class ReadList
   attr_accessor :file, :list, :sorted
 
   def initialize
-    file = File.open('..\data\wordlist.txt', 'r')
+    file = File.open('..\data\words.txt', 'r')
     @list = []
     file.each_line do |line|
       @list << line.chomp
